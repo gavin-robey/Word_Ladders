@@ -1,9 +1,6 @@
-import java.lang.*;
-
 /**
  * Implements an AVL tree.
  * Note that all "matching" is based on the compareTo method.
- * Based on code provided by Mark Allen Weiss (CS 2420 book author)
  */
 public class AVLTree<E extends Comparable<? super E>> {
     /**
