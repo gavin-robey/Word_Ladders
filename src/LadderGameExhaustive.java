@@ -3,6 +3,10 @@ import java.util.ArrayList;
 public class LadderGameExhaustive extends LadderGame {
     private final ArrayList<ArrayList<String>> sortedWords = getSortedWords();
 
+    /**
+     * driver for the exhaustive search algorithm
+     * @param dictionaryFile .txt file
+     */
     public LadderGameExhaustive(String dictionaryFile) {
         super(dictionaryFile);
     }

@@ -12,10 +12,17 @@ public class Queue <E>{
         }
     }
 
+    /**
+     * FIFO queue used by the exhaustive search
+     */
     public Queue() {
         this.head = this.tail = null;
     }
 
+    /**
+     * Adds a value to the end of the queue 
+     * @param value value to be added to the end of the queue
+     */
     public void enqueue(E value) {
         if (tail != null) {
             tail.next = new ListNode<E>(value, null);
@@ -26,6 +33,10 @@ public class Queue <E>{
         }
     }
 
+    /**
+     * removes the first item in the queue and returns this value
+     * @return The first item in the queue 
+     */
     public E dequeue() {
         if(head == null){
             return null;

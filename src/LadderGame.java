@@ -18,6 +18,12 @@ public abstract class LadderGame {
     }
 
 
+    /**
+     * 
+     * @param word input word to find all one-away words
+     * @param withRemoval gives the method the ability to remove a word from the sorted words array
+     * @return ArrayList<String> of all one away words
+     */
     public ArrayList<String> oneAway(String word, boolean withRemoval) {
         ArrayList<String> words = new ArrayList<>();
         if(!withRemoval) {
